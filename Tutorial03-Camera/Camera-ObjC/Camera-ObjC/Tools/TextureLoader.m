@@ -39,8 +39,6 @@
         free(imageBytes); // 需要释放资源;
         imageBytes = NULL;
     }
-    
-    textureDesc.usage = MTLTextureUsageShaderRead | MTLTextureUsageShaderWrite;
 
     return mtlTexture;
 }

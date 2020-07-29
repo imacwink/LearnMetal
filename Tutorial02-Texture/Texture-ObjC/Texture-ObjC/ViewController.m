@@ -36,6 +36,7 @@
     // 创建真实渲染器，需要熏染一个三角形，同时需要将视图窗口的 Layer 信息传递给它;
     self.textureRender = [[Texture alloc] initWithLayer: self.mtlView.metalLayer context: self.mtlContext];
     [self.textureRender processDraw:[TextureLoader loadTexture:self.mtlContext.device assertName:@"test"]];
+//    [self.textureRender processDraw:[TextureLoader loadTexture:self.mtlContext.device imageNamed:@"for-test-001.jpeg"]];
 }
 
 @end

@@ -41,7 +41,7 @@
 ## Lut Metal Shader
 -------------
 
-    ```objc
+```objc
     fragment float4 lut_texture_fragment(RasterizerData input [[stage_in]],
                                         constant float &intensity [[buffer(2)]],
                                         constant LutInfo &lutInfo [[buffer(3)]],
@@ -75,4 +75,4 @@
         
         return float4(newColor.rgb, textureColor.w); // 不修改alpha值;
     }
-    ```
+```

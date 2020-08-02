@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1737577824D544010043C966 /* LutTexture.metal in Sources */ = {isa = PBXBuildFile; fileRef = 1737577524D544010043C966 /* LutTexture.metal */; };
+		1737577924D544010043C966 /* LutTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 1737577724D544010043C966 /* LutTexture.m */; };
+		1737577E24D568A90043C966 /* DefineCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1737577D24D568A90043C966 /* DefineCollectionViewCell.m */; };
+		1737578124D5769E0043C966 /* lut5.png in Resources */ = {isa = PBXBuildFile; fileRef = 1737577F24D5769C0043C966 /* lut5.png */; };
+		1737578224D5769E0043C966 /* lut6.png in Resources */ = {isa = PBXBuildFile; fileRef = 1737578024D5769D0043C966 /* lut6.png */; };
+		17D21CD224D27D110036517F /* MetalContext.mm in Sources */ = {isa = PBXBuildFile; fileRef = 17D21CC224D27D110036517F /* MetalContext.mm */; };
+		17D21CD524D27D110036517F /* MetalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D21CCB24D27D110036517F /* MetalView.m */; };
+		17D21CD624D27D110036517F /* CameraEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D21CCF24D27D110036517F /* CameraEngine.m */; };
+		17D21CD724D27D110036517F /* TextureLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D21CD024D27D110036517F /* TextureLoader.m */; };
+		17D21CDF24D3070D0036517F /* original.png in Resources */ = {isa = PBXBuildFile; fileRef = 17D21CDA24D3070D0036517F /* original.png */; };
+		17D21CE024D3070D0036517F /* lut1.png in Resources */ = {isa = PBXBuildFile; fileRef = 17D21CDB24D3070D0036517F /* lut1.png */; };
+		17D21CE124D3070D0036517F /* lut4.png in Resources */ = {isa = PBXBuildFile; fileRef = 17D21CDC24D3070D0036517F /* lut4.png */; };
+		17D21CE224D3070D0036517F /* lut3.png in Resources */ = {isa = PBXBuildFile; fileRef = 17D21CDD24D3070D0036517F /* lut3.png */; };
+		17D21CE324D3070D0036517F /* lut2.png in Resources */ = {isa = PBXBuildFile; fileRef = 17D21CDE24D3070D0036517F /* lut2.png */; };
 		17F8410B24C5CB7200444F86 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17F8410A24C5CB7200444F86 /* AppDelegate.m */; };
 		17F8410E24C5CB7200444F86 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17F8410D24C5CB7200444F86 /* SceneDelegate.m */; };
 		17F8411124C5CB7200444F86 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17F8411024C5CB7200444F86 /* ViewController.m */; };
@@ -36,6 +50,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1737577524D544010043C966 /* LutTexture.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = LutTexture.metal; sourceTree = "<group>"; };
+		1737577624D544010043C966 /* LutTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LutTexture.h; sourceTree = "<group>"; };
+		1737577724D544010043C966 /* LutTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LutTexture.m; sourceTree = "<group>"; };
+		1737577C24D568A90043C966 /* DefineCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefineCollectionViewCell.h; sourceTree = "<group>"; };
+		1737577D24D568A90043C966 /* DefineCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefineCollectionViewCell.m; sourceTree = "<group>"; };
+		1737577F24D5769C0043C966 /* lut5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut5.png; sourceTree = "<group>"; };
+		1737578024D5769D0043C966 /* lut6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut6.png; sourceTree = "<group>"; };
+		17D21CC224D27D110036517F /* MetalContext.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MetalContext.mm; sourceTree = "<group>"; };
+		17D21CC324D27D110036517F /* MetalContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetalContext.h; sourceTree = "<group>"; };
+		17D21CC924D27D110036517F /* DefineTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineTypes.h; sourceTree = "<group>"; };
+		17D21CCB24D27D110036517F /* MetalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MetalView.m; sourceTree = "<group>"; };
+		17D21CCC24D27D110036517F /* MetalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetalView.h; sourceTree = "<group>"; };
+		17D21CCE24D27D110036517F /* TextureLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextureLoader.h; sourceTree = "<group>"; };
+		17D21CCF24D27D110036517F /* CameraEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraEngine.m; sourceTree = "<group>"; };
+		17D21CD024D27D110036517F /* TextureLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextureLoader.m; sourceTree = "<group>"; };
+		17D21CD124D27D110036517F /* CameraEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraEngine.h; sourceTree = "<group>"; };
+		17D21CDA24D3070D0036517F /* original.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = original.png; sourceTree = "<group>"; };
+		17D21CDB24D3070D0036517F /* lut1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut1.png; sourceTree = "<group>"; };
+		17D21CDC24D3070D0036517F /* lut4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut4.png; sourceTree = "<group>"; };
+		17D21CDD24D3070D0036517F /* lut3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut3.png; sourceTree = "<group>"; };
+		17D21CDE24D3070D0036517F /* lut2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lut2.png; sourceTree = "<group>"; };
 		17F8410624C5CB7200444F86 /* LUT-ObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LUT-ObjC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17F8410924C5CB7200444F86 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		17F8410A24C5CB7200444F86 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -81,6 +116,103 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1737577A24D5684A0043C966 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1737577B24D568500043C966 /* Cell */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		1737577B24D568500043C966 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1737577C24D568A90043C966 /* DefineCollectionViewCell.h */,
+				1737577D24D568A90043C966 /* DefineCollectionViewCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		17D21CC024D27D110036517F /* Metal */ = {
+			isa = PBXGroup;
+			children = (
+				17D21CC124D27D110036517F /* Context */,
+				17D21CC424D27D110036517F /* Render */,
+				17D21CCA24D27D110036517F /* View */,
+			);
+			path = Metal;
+			sourceTree = "<group>";
+		};
+		17D21CC124D27D110036517F /* Context */ = {
+			isa = PBXGroup;
+			children = (
+				17D21CC224D27D110036517F /* MetalContext.mm */,
+				17D21CC324D27D110036517F /* MetalContext.h */,
+			);
+			path = Context;
+			sourceTree = "<group>";
+		};
+		17D21CC424D27D110036517F /* Render */ = {
+			isa = PBXGroup;
+			children = (
+				17D21CC524D27D110036517F /* LutTexture */,
+			);
+			path = Render;
+			sourceTree = "<group>";
+		};
+		17D21CC524D27D110036517F /* LutTexture */ = {
+			isa = PBXGroup;
+			children = (
+				1737577624D544010043C966 /* LutTexture.h */,
+				1737577724D544010043C966 /* LutTexture.m */,
+				1737577524D544010043C966 /* LutTexture.metal */,
+				17D21CC924D27D110036517F /* DefineTypes.h */,
+			);
+			path = LutTexture;
+			sourceTree = "<group>";
+		};
+		17D21CCA24D27D110036517F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				17D21CCB24D27D110036517F /* MetalView.m */,
+				17D21CCC24D27D110036517F /* MetalView.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		17D21CCD24D27D110036517F /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				17D21CCE24D27D110036517F /* TextureLoader.h */,
+				17D21CD024D27D110036517F /* TextureLoader.m */,
+				17D21CD124D27D110036517F /* CameraEngine.h */,
+				17D21CCF24D27D110036517F /* CameraEngine.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		17D21CD824D3069F0036517F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				17D21CD924D306AE0036517F /* Luts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		17D21CD924D306AE0036517F /* Luts */ = {
+			isa = PBXGroup;
+			children = (
+				17D21CDB24D3070D0036517F /* lut1.png */,
+				17D21CDE24D3070D0036517F /* lut2.png */,
+				17D21CDD24D3070D0036517F /* lut3.png */,
+				17D21CDC24D3070D0036517F /* lut4.png */,
+				1737577F24D5769C0043C966 /* lut5.png */,
+				1737578024D5769D0043C966 /* lut6.png */,
+				17D21CDA24D3070D0036517F /* original.png */,
+			);
+			path = Luts;
+			sourceTree = "<group>";
+		};
 		17F840FD24C5CB7200444F86 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +236,10 @@
 		17F8410824C5CB7200444F86 /* LUT-ObjC */ = {
 			isa = PBXGroup;
 			children = (
+				1737577A24D5684A0043C966 /* UI */,
+				17D21CD824D3069F0036517F /* Resources */,
+				17D21CC024D27D110036517F /* Metal */,
+				17D21CCD24D27D110036517F /* Tools */,
 				17F8410924C5CB7200444F86 /* AppDelegate.h */,
 				17F8410A24C5CB7200444F86 /* AppDelegate.m */,
 				17F8410C24C5CB7200444F86 /* SceneDelegate.h */,
@@ -239,6 +375,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17D21CDF24D3070D0036517F /* original.png in Resources */,
+				17D21CE224D3070D0036517F /* lut3.png in Resources */,
+				1737578124D5769E0043C966 /* lut5.png in Resources */,
+				17D21CE324D3070D0036517F /* lut2.png in Resources */,
+				17D21CE024D3070D0036517F /* lut1.png in Resources */,
+				17D21CE124D3070D0036517F /* lut4.png in Resources */,
+				1737578224D5769E0043C966 /* lut6.png in Resources */,
 				17F8411924C5CB7400444F86 /* LaunchScreen.storyboard in Resources */,
 				17F8411624C5CB7400444F86 /* Assets.xcassets in Resources */,
 				17F8411424C5CB7200444F86 /* Main.storyboard in Resources */,
@@ -266,9 +409,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1737577E24D568A90043C966 /* DefineCollectionViewCell.m in Sources */,
 				17F8411124C5CB7200444F86 /* ViewController.m in Sources */,
+				1737577924D544010043C966 /* LutTexture.m in Sources */,
 				17F8410B24C5CB7200444F86 /* AppDelegate.m in Sources */,
+				17D21CD224D27D110036517F /* MetalContext.mm in Sources */,
+				17D21CD624D27D110036517F /* CameraEngine.m in Sources */,
+				17D21CD524D27D110036517F /* MetalView.m in Sources */,
+				17D21CD724D27D110036517F /* TextureLoader.m in Sources */,
 				17F8411C24C5CB7400444F86 /* main.m in Sources */,
+				1737577824D544010043C966 /* LutTexture.metal in Sources */,
 				17F8410E24C5CB7200444F86 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

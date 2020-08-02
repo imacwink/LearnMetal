@@ -1,0 +1,66 @@
+//
+//  MetalContext.mm
+//  Triangle-ObjC
+//
+//  Created by 王云刚 on 2020/7/16.
+//
+//
+//
+//                 .-~~~~~~~~~-._       _.-~~~~~~~~~-.
+//             __.'              ~.   .~              `.__
+//           .'//                  \./                  \\`.
+//         .'//                     |                     \\`.
+//       .'// .-~"""""""~~~~-._     |     _,-~~~~"""""""~-. \\`.
+//     .'//.-"                 `-.  |  .-'                 "-.\\`.
+//   .'//______.============-..   \ | /   ..-============.______\\`.
+// .'______________________________\|/______________________________`.
+//
+
+#import "MetalContext.h"
+#import <Metal/Metal.h>
+
+@implementation MetalContext
+
+static MetalContext *_instance;
++ (instancetype)shareMetalContext {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        if (nil == _instance) {
+            _instance = [[self alloc] initWithDevice:nil];
+        }
+    });
+    return _instance;
+}
+
++ (instancetype)newContext {
+    return [[self alloc] initWithDevice:nil];
+}
+
+- (instancetype)initWithDevice:(id<MTLDevice>)device {
+    if ((self = [super init])) {
+        _device = device ?: MTLCreateSystemDefaultDevice();
+        _library = [_device newDefaultLibrary];
+        _commandQueue = [_device newCommandQueue];  // CommandQueue 是渲染指令队列，保证渲染指令有序地提交到GPU;
+    }
+    return self;
+}
+
+- (id<MTLTexture>) textureFromPixelBuffer:(CVPixelBufferRef)vpBuffer {
+    size_t width = CVPixelBufferGetWidth( vpBuffer );
+    size_t height = CVPixelBufferGetHeight( vpBuffer );
+    MTLPixelFormat pixelFormat = MTLPixelFormatBGRA8Unorm;
+    CVMetalTextureCacheRef textureCache;
+    CVMetalTextureCacheCreate( kCFAllocatorDefault, nil, _device, nil, &textureCache );
+    CVMetalTextureRef metalTextureRef = NULL;
+    CVReturn status = CVMetalTextureCacheCreateTextureFromImage( NULL, textureCache, vpBuffer, NULL, pixelFormat, width, height, 0, &metalTextureRef );
+    
+    id<MTLTexture> texture = nil;
+    if( kCVReturnSuccess == status ) {
+        texture = CVMetalTextureGetTexture( metalTextureRef );
+        CFRelease( metalTextureRef );
+        CFRelease( textureCache );
+    }
+    return texture;
+}
+
+@end
